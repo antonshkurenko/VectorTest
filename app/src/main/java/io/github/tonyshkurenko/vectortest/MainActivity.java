@@ -13,9 +13,15 @@ public class MainActivity extends AppCompatActivity {
     setContentView(R.layout.activity_main);
 
     final ImageView androidImageView = (ImageView) findViewById(R.id.android);
-    final Drawable drawable = androidImageView.getDrawable();
-    if (drawable instanceof Animatable) {
-      ((Animatable) drawable).start();
+    final Drawable androidDrawable = androidImageView.getDrawable();
+    if (androidDrawable instanceof Animatable) {
+      ((Animatable) androidDrawable).start();
+    }
+
+    final ImageView smilingFaceImageView = (ImageView) findViewById(R.id.smiling_face);
+    final Drawable smilingDrawable = smilingFaceImageView.getDrawable();
+    if (smilingDrawable instanceof Animatable) {
+      ((Animatable) smilingDrawable).start();
     }
   }
 }

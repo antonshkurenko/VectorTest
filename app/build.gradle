@@ -6,12 +6,12 @@ android {
 
   defaultConfig {
     applicationId "io.github.tonyshkurenko.vectortest"
-    minSdkVersion 15
+    minSdkVersion 21
     targetSdkVersion 24
     versionCode 1
     versionName "1.0"
 
-    vectorDrawables.useSupportLibrary = true
+    //vectorDrawables.useSupportLibrary = true
   }
 
   buildTypes {
